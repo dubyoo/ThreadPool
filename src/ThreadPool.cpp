@@ -12,7 +12,7 @@ ThreadPool::ThreadPool(int threads_num)
 	THREADS_ITER it = threads_.begin();
 	for (; it != threads_.end(); ++it)
 	{
-		it->register_thread_pool(this);
+		it->register_to_thread_pool(this);
 	}
 }
 

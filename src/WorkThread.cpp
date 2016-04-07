@@ -21,7 +21,7 @@ void WorkThread::run()
 	}
 }
 
-void WorkThread::register_thread_pool(ThreadPool * tp)
+void WorkThread::register_to_thread_pool(ThreadPool * tp)
 {
 	thread_pool_ = tp;
 }
