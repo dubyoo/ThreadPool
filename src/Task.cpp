@@ -1,5 +1,6 @@
 #include <iostream>
-#include <unistd.h>
+#include <thread>
+#include <chrono>
 #include "Task.h"
 
 Task::Task()
@@ -34,7 +35,7 @@ ComputeTask::~ComputeTask()
 bool ComputeTask::handle_task()
 {
 	int result = n1_ * n2_;
-	usleep(2000);				// sleep 2ms (simulate executing time)
+	std::this_thread::sleep_for(std::chrono::microseconds(2));		// sleep 2ms (simulate executing time)
 //  std::cout << n1_ << " * " << n2_ << " = " << result << std::endl;
 	return result;
 }
