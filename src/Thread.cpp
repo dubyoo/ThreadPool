@@ -1,4 +1,4 @@
-#include <iostream>
+﻿#include <iostream>
 #include <functional>
 #include "Thread.h"
 

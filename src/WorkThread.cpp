@@ -1,4 +1,4 @@
-#include "WorkThread.h"
+﻿#include "WorkThread.h"
 #include "ThreadPool.h"
 
 WorkThread::WorkThread()
